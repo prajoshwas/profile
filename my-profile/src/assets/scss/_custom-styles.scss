@@ -1,0 +1,34 @@
+// Your custom styles
+
+
+.container-fluid{
+    padding:0!important;
+}
+
+.navbar, footer{
+    background-color: $color-base;
+}
+
+.custom-fab{
+    padding:10px;
+}
+
+.custom-fab-fb:hover{
+    color:#3B5998;
+    cursor:pointer;
+}
+
+.custom-fab-twitter:hover{
+    color:#1DA1F2;
+    cursor:pointer;
+}
+
+.custom-fab-instagram:hover{
+    color:rgb(117, 26, 53);
+    cursor:pointer;
+}
+
+.custom-fab-linkedin:hover{
+    color:#0E76A8;
+    cursor:pointer;
+}
