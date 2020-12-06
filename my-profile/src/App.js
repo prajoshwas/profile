@@ -1,9 +1,11 @@
 import React, {useState}from "react";
 import {
 MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBFormInline,
-MDBIcon, MDBContainer, MDBFooter, MDBCol, MDBRow
+MDBIcon, MDBContainer, MDBFooter, MDBCol, MDBRow, MDBJumbotron, MDBCardTitle, MDBBtn
 } from "mdbreact";
 import { BrowserRouter as Router } from 'react-router-dom';
+import cloudNinjaWallpaper from './assets/images/website-banner4.png';
+import allianceLogo from './assets/images/asilogo.png';
 
 const App = () =>{
 const[collapse, isOpen] = useState('');
@@ -78,11 +80,38 @@ const icons = [
 
       <MDBContainer fluid style={{minHeight:'100vh',overflowX:'hidden'}}>
         <MDBRow>
-          <MDBCol lg="6">
-            Col 1
+          <MDBCol lg="12" style={{flexGrow:'1'}}>
+          <MDBJumbotron>
+          <h2 className="h1 display-3">Hello! I am Joshua Mark Sugatan</h2>
+          <MDBContainer fluid className="pt-3 custom-div-jb">
+            <p className="lead">
+              I am a software developer, currently working at CloudNinja PH ( Aug 2020 - Present )
+            </p>
+            <hr className="my-2" />
+            <img src={cloudNinjaWallpaper} style={{maxWidth:"100%",height:'auto'}}></img>
+            <p className="mt-2">
+             Cloud Ninja PH is a Software Solutions, AI, and Robotics Company providing reliable, hassle-free, value-for-money software solutions, products, and services.
+            </p>
+  
+              <MDBBtn className="custom-btn" onClick={e => openInTab("https://cloudninja.ph/",e)}>Learn More</MDBBtn>
+  
+            <hr className="my-2" />
+            <p>
+              My previous work experience was in Alliance Software Inc. ( Apr 2019 - Aug 2020 )
+            </p>
+            <img src={allianceLogo} style={{maxWidth:'100%',height:'auto'}}></img>
+            <p className="mt-2">
+              Alliance Software, Inc. is a Global IT Services and Solutions Company.
+            </p>
+
+              <MDBBtn className="custom-btn" onClick={e => openInTab("https://alliance.com.ph/",e)}>Learn More</MDBBtn>
+          </MDBContainer>
+          </MDBJumbotron>
           </MDBCol>
-          <MDBCol lg="6">
-            Col 2
+        </MDBRow>
+        <MDBRow>
+          <MDBCol lg="12" style={{flexGrow:'1'}}>
+            In Progress
           </MDBCol>
         </MDBRow>
       </MDBContainer>
@@ -100,7 +129,7 @@ const icons = [
               </p>
             </MDBCol>
             <MDBCol lg="6" md="6">
-              <h5 className="title">Contact Me on the following :</h5>
+              <h5 className="title font-weight-bold">CONTACT ME AT :</h5>
               {
                 icons.map((item,idx) =>
                 (
