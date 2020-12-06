@@ -1,7 +1,7 @@
 import React, {useState}from "react";
 import {
-MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBFormInline,
-MDBIcon, MDBContainer, MDBFooter, MDBCol, MDBRow, MDBJumbotron, MDBCardTitle, MDBBtn
+MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse,
+MDBIcon, MDBContainer, MDBFooter, MDBCol, MDBRow, MDBJumbotron, MDBBtn
 } from "mdbreact";
 import { BrowserRouter as Router } from 'react-router-dom';
 import cloudNinjaWallpaper from './assets/images/website-banner4.png';
