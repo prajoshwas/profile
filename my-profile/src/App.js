@@ -1,11 +1,13 @@
 import React, {useState}from "react";
 import {
 MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse,
-MDBIcon, MDBContainer, MDBFooter, MDBCol, MDBRow, MDBJumbotron, MDBBtn
+MDBIcon, MDBContainer, MDBFooter, MDBCol, MDBRow, MDBJumbotron, MDBBtn, MDBTooltip, MDBCarousel, 
+MDBCarouselInner, MDBCarouselItem, MDBView,MDBCarouselCaption, MDBMask
 } from "mdbreact";
 import { BrowserRouter as Router } from 'react-router-dom';
 import cloudNinjaWallpaper from './assets/images/website-banner4.png';
 import allianceLogo from './assets/images/asilogo.png';
+import me from './assets/images/me.jpg';
 
 const App = () =>{
 const[collapse, isOpen] = useState('');
@@ -82,36 +84,97 @@ const icons = [
         <MDBRow>
           <MDBCol lg="12" style={{flexGrow:'1'}}>
           <MDBJumbotron>
-          <h2 className="h1 display-3">Hello! I am Joshua Mark Sugatan</h2>
-          <MDBContainer fluid className="pt-3 custom-div-jb">
+            <MDBContainer className="text-center">
+            <h2 className="h1 display-3">Hello! I am Joshua Mark Sugatan</h2>
+            </MDBContainer>
+            <MDBContainer center className="text-center my-5">        
+              <img src={me} alt="Graduation Picture" className="custom-img"/>
+            </MDBContainer>
+          <MDBContainer fluid className="pt-3 custom-div-jb" style={{width:'50%'}}>
             <p className="lead">
               I am a software developer, currently working at CloudNinja PH ( Aug 2020 - Present )
             </p>
             <hr className="my-2" />
-            <img src={cloudNinjaWallpaper} style={{maxWidth:"100%",height:'auto'}}></img>
+            <img src={cloudNinjaWallpaper} style={{maxWidth:"100%",height:'auto'}} alt="Cloud Ninja Logo"></img>
             <p className="mt-2">
              Cloud Ninja PH is a Software Solutions, AI, and Robotics Company providing reliable, hassle-free, value-for-money software solutions, products, and services.
             </p>
-  
+
+            <MDBTooltip placement="right">
               <MDBBtn className="custom-btn" onClick={e => openInTab("https://cloudninja.ph/",e)}>Learn More</MDBBtn>
-  
+              <div >Click me to know more</div>
+            </MDBTooltip>
+
             <hr className="my-2" />
             <p>
               My previous work experience was in Alliance Software Inc. ( Apr 2019 - Aug 2020 )
             </p>
-            <img src={allianceLogo} style={{maxWidth:'100%',height:'auto'}}></img>
+            <img src={allianceLogo} style={{maxWidth:'100%',height:'auto'}} alt="Alliance Logo"/>
             <p className="mt-2">
               Alliance Software, Inc. is a Global IT Services and Solutions Company.
             </p>
-
-              <MDBBtn className="custom-btn" onClick={e => openInTab("https://alliance.com.ph/",e)}>Learn More</MDBBtn>
+            <MDBBtn className="custom-btn" onClick={e => openInTab("https://alliance.com.ph/",e)}>Learn More</MDBBtn>
           </MDBContainer>
           </MDBJumbotron>
           </MDBCol>
         </MDBRow>
         <MDBRow>
-          <MDBCol lg="12" style={{flexGrow:'1'}}>
-            In Progress
+        <MDBCol lg="12" style={{backgroundColor:'#393e46'}}>
+          <hr style={{width:'100%'}}/>
+        </MDBCol>
+        <MDBCol lg="12" style={{flexGrow:'1',padding:'50px',backgroundColor:'#393e46'}}>
+              <MDBCarousel
+                activeItem={1}
+                length={3}
+                showControls={true}
+                showIndicators={true}
+                className="z-depth-1"
+              >
+                <MDBCarouselInner>
+                  <MDBCarouselItem itemId="1">
+                    <MDBView>
+                      <img
+                        className="d-block w-100"
+                        src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg"
+                        alt="First slide"
+                      />
+                    <MDBMask overlay="black-light" />
+                    </MDBView>
+                    <MDBCarouselCaption>
+                      <h3 className="h3-responsive">Light mask</h3>
+                      <p>First text</p>
+                    </MDBCarouselCaption>
+                  </MDBCarouselItem>
+                  <MDBCarouselItem itemId="2">
+                    <MDBView>
+                      <img
+                        className="d-block w-100"
+                        src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg"
+                        alt="Second slide"
+                      />
+                    <MDBMask overlay="black-strong" />
+                    </MDBView>
+                    <MDBCarouselCaption>
+                      <h3 className="h3-responsive">Strong mask</h3>
+                      <p>Second text</p>
+                    </MDBCarouselCaption>
+                  </MDBCarouselItem>
+                  <MDBCarouselItem itemId="3">
+                    <MDBView>
+                      <img
+                        className="d-block w-100"
+                        src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg"
+                        alt="Third slide"
+                      />
+                    <MDBMask overlay="black-slight" />
+                    </MDBView>
+                    <MDBCarouselCaption>
+                      <h3 className="h3-responsive">Slight Mast</h3>
+                      <p>Third text</p>
+                    </MDBCarouselCaption>
+                  </MDBCarouselItem>
+                </MDBCarouselInner>
+              </MDBCarousel>
           </MDBCol>
         </MDBRow>
       </MDBContainer>

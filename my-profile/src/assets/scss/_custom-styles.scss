@@ -1,0 +1,74 @@
+// Your custom styles
+.container-fluid{
+    padding:0!important;
+}
+
+.navbar, footer{
+    background-color: $color-base;
+}
+h2{
+    color:#FFF;
+}
+.jumbotron{
+    background-color: $secondary-color !important;
+    border-radius: 0 !important;
+    margin-bottom: 0 !important;
+}
+.custom-btn:hover{
+    color:#FFF !important;
+    background-color: $color-base !important;
+}
+.custom-btn{
+    background-color:$component-color !important;
+}
+.custom-fab{
+    padding:10px;
+}
+
+.btn{
+    text-transform:none !important;
+    border-radius:1.5rem !important;
+}
+
+.custom-img{
+    border-radius: 50%;
+    border: 10px solid $component-color;
+    width:300px;
+    max-width:50%;
+}
+
+.company-img{
+    text-align: center;
+}
+
+hr{
+    background-color:rgba(255,255,255,0.50) !important;
+}
+p{
+    color:#EEEEEE;
+}
+.custom-fab-fb:hover{
+    color:#3B5998;
+    cursor:pointer;
+}
+
+.custom-fab-twitter:hover{
+    color:#1DA1F2;
+    cursor:pointer;
+}
+
+.custom-fab-instagram:hover{
+    color:rgb(117, 26, 53);
+    cursor:pointer;
+}
+
+.custom-fab-linkedin:hover{
+    color:#0E76A8;
+    cursor:pointer;
+}
+
+.custom-div-jb{
+    padding:1rem !important;
+    border: 1px solid rgba(238,238,238,0.5);
+    border-radius: 1.5rem;
+}
