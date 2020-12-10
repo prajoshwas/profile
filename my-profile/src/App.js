@@ -90,32 +90,37 @@ const icons = [
             <MDBContainer center className="text-center my-5">        
               <img src={me} alt="Graduation Picture" className="custom-img"/>
             </MDBContainer>
-          <MDBContainer fluid className="pt-3 custom-div-jb" style={{width:'50%'}}>
-            <p className="lead">
-              I am a software developer, currently working at CloudNinja PH ( Aug 2020 - Present )
-            </p>
-            <hr className="my-2" />
-            <img src={cloudNinjaWallpaper} style={{maxWidth:"100%",height:'auto'}} alt="Cloud Ninja Logo"></img>
-            <p className="mt-2">
-             Cloud Ninja PH is a Software Solutions, AI, and Robotics Company providing reliable, hassle-free, value-for-money software solutions, products, and services.
-            </p>
+          <MDBContainer fluid className="pt-3 custom-div-jb text-center" style={{width:'50%'}}>
+              <p className="lead text-center">
+                I am a software developer, currently working at CloudNinja PH ( Aug 2020 - Present )
+              </p>
+              <hr className="my-2" />
+              <img src={cloudNinjaWallpaper} style={{maxWidth:"100%",height:'auto'}} alt="Cloud Ninja Logo"></img>
+              <p className="mt-2">
+              Cloud Ninja PH is a Software Solutions, AI, and Robotics Company providing reliable, hassle-free, value-for-money software solutions, products, and services.
+              </p>
+            <MDBContainer>
+              <MDBTooltip placement="right">
+                <MDBBtn className="custom-btn" onClick={e => openInTab("https://cloudninja.ph/",e)}>Learn More</MDBBtn>
+                <div >Click me to know more</div>
+              </MDBTooltip>
 
-            <MDBTooltip placement="right">
-              <MDBBtn className="custom-btn" onClick={e => openInTab("https://cloudninja.ph/",e)}>Learn More</MDBBtn>
-              <div >Click me to know more</div>
-            </MDBTooltip>
+            </MDBContainer>
+              <hr className="my-2" />
+              <p className="lead">
+                My previous work experience was in Alliance Software Inc. ( Apr 2019 - Aug 2020 )
+              </p>
+              <img src={allianceLogo} style={{maxWidth:'100%',height:'auto'}} alt="Alliance Logo"/>
+              <p className="mt-2">
+                Alliance Software, Inc. is a Global IT Services and Solutions Company.
+              </p>
+            <MDBContainer>
+              <MDBBtn className="custom-btn" onClick={e => openInTab("https://alliance.com.ph/",e)}>Learn More</MDBBtn>
+            </MDBContainer>
 
-            <hr className="my-2" />
-            <p>
-              My previous work experience was in Alliance Software Inc. ( Apr 2019 - Aug 2020 )
-            </p>
-            <img src={allianceLogo} style={{maxWidth:'100%',height:'auto'}} alt="Alliance Logo"/>
-            <p className="mt-2">
-              Alliance Software, Inc. is a Global IT Services and Solutions Company.
-            </p>
-            <MDBBtn className="custom-btn" onClick={e => openInTab("https://alliance.com.ph/",e)}>Learn More</MDBBtn>
           </MDBContainer>
           </MDBJumbotron>
+
           </MDBCol>
         </MDBRow>
         <MDBRow>

@@ -1,0 +1,12 @@
+@include media-breakpoint-down(xs) { 
+    .custom-div-jb{
+        width:100% !important;
+    }
+}
+@include media-breakpoint-down(sm) { 
+    .custom-div-jb{
+        width:100% !important;
+    }
+}
+@include media-breakpoint-down(md) {  }
+@include media-breakpoint-down(lg) {  }
