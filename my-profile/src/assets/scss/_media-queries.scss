@@ -2,11 +2,37 @@
     .custom-div-jb{
         width:100% !important;
     }
+    .carousel{
+       width:90% !important;
+    }
+    .custom-col-carousel{
+        padding:10px !important;
+    }
 }
 @include media-breakpoint-down(sm) { 
     .custom-div-jb{
         width:100% !important;
     }
+    .carousel{
+        width:90% !important;
+     }
+     .custom-col-carousel{
+         padding:10px !important;
+     }
 }
-@include media-breakpoint-down(md) {  }
-@include media-breakpoint-down(lg) {  }
+@include media-breakpoint-down(md) { 
+    .carousel{
+        width:90% !important;
+    }
+ }
+@include media-breakpoint-down(lg) { 
+    .carousel{
+        width:50% !important;
+    }
+ }
+
+ @include media-breakpoint-down(xl) { 
+    .carousel{
+        width:90% !important;
+    }
+ }
