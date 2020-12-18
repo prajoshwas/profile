@@ -3,33 +3,40 @@ import {
 MDBIcon, MDBContainer, MDBFooter, MDBCol, MDBRow
 } from "mdbreact";
 import mdbreact from '../assets/images/mdb-react.png';
+import outsystemslogo from '../assets/images/outsystems.png';
 
 const Footer = () => {
     const icons = [
         {
           icon:'facebook',
-          alt:'https://www.facebook.com/prajoshwas',
+          alt:'Facebook Profile',
           title:'https://www.facebook.com/prajoshwas',
           className:"custom-fab-fb p-3",
         },
         {
           icon:'twitter',
-          alt:'twitter',
+          alt:'Twitter Profile',
           title: 'https://twitter.com/prajoshwas',
           className:"custom-fab-twitter p-3", 
         },
         {
           icon:'instagram',
-          alt:'instagram',
+          alt:'Instagram Profile',
           title:'https://www.instagram.com/jshugatan/',
           className:"custom-fab-instagram p-3",
         },
         {
           icon:'linkedin',
-          alt:'linkedin',
+          alt:'LinkedIn Profile',
           title:'https://www.linkedin.com/in/joshua-mark-sugatan-652882156/',
           className:"custom-fab-linkedin p-3",
         },
+        {
+          icon:'github',
+          alt:'Github Profile',
+          title:"https://github.com/prajoshwas",
+          className:" custom-fab-github p-3"
+        }
     ]
      
     const openInTab = (url,e)=>{
@@ -43,7 +50,7 @@ const Footer = () => {
             <MDBContainer className="py-3 text-center text-md-left" data-aos="fade-left" data-aos-easing="ease-in-sine">
             <MDBRow>
               <MDBCol lg="6" md="6" className="text-center">
-                <h5 className="d-block">This Page was created using 
+                <h5 className="d-block" style={{fontSize:"20px"}}>This page was created using 
                   <span className="d-block">
                   <MDBIcon className="d-inline-block my-3 custom-react-icon" size="lg" fab icon="react">                
                   </MDBIcon>
@@ -52,7 +59,7 @@ const Footer = () => {
                   and
                   <span className="d-block my-3"> 
                   <img className="d-inline-block" src={mdbreact} style={{width:'70px',marginTop:'-5px'}}/>
-                  <span className="d-inline-block"style={{fontSize:'24px'}}> MDBReact</span>
+                  <span className="d-inline-block"style={{fontSize:'24px'}}> MDBootstrap</span>
                   </span>
                 </h5>
               </MDBCol>
@@ -72,6 +79,7 @@ const Footer = () => {
                         </MDBIcon>
                     ))
                 }
+                <img src={outsystemslogo} className="custom-outsystems" title="https://www.outsystems.com/profile/283424/" style={{width:'100px'}} onClick={e => openInTab("https://www.outsystems.com/profile/283424/",e)}></img>
               </MDBCol>
             </MDBRow>
             </MDBContainer>

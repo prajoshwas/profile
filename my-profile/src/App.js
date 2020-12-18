@@ -38,20 +38,23 @@ const App = () =>{
 
       <MDBContainer fluid style={{minHeight:'100vh',overflowX:"hidden"}}>
         <MDBRow>
-          <MDBCol  className="w3-container mt-5" lg="12">
+          <MDBCol  className="w3-container mt-5" lg="6" md="6" sm="12" xs="12">
           <MDBJumbotron>
             <MDBContainer className="text-center">
             <h2 className="h1 display-3 w3-animate-opacity" >Hello! I am Joshua Mark Sugatan</h2>
             </MDBContainer>
             <MDBContainer center="true" className="text-center my-5 ">        
-              <img src={me} alt="Graduation Picture" className="custom-img w3-animate-opacity"/>
+              <img src={me} alt="Graduation Picture" className="custom-img w3-animate-opacity" style={{boxShadow:'0px 10px 10px 0px rgba(0,0,0,0.3)'}}/>
             </MDBContainer>
-          <MDBContainer className="pt-3 custom-div-jb text-center w3-animate-bottom" style={{width:'50%'}}>
+          <MDBContainer className="pt-3 custom-div-jb text-center w3-animate-bottom" style={{width:'80%',boxShadow:'0px 5px 5px 0px rgba(0,0,0,0.3)'}}>
               <p className="lead text-center">
-                I am a software developer, currently working at CloudNinja PH ( Aug 2020 - Present )
+                I am a software developer, currently working at CloudNinja PH
+              </p>
+              <p>
+                ( Aug 2020 - Present )
               </p>
               <hr className="my-2" />
-              <img src={cloudNinjaWallpaper} style={{maxWidth:"100%",height:'auto'}} alt="Cloud Ninja Logo"></img>
+              <img src={cloudNinjaWallpaper} style={{maxWidth:"100%",height:'auto', boxShadow:'0px 5px 5px 0px rgba(0,0,0,0.3)'}} alt="Cloud Ninja Logo"></img>
               <p className="mt-2">
               Cloud Ninja PH is a Software Solutions, AI, and Robotics Company providing reliable, hassle-free, value-for-money software solutions, products, and services.
               </p>
@@ -64,9 +67,12 @@ const App = () =>{
             </MDBContainer>
               <hr className="my-2" />
               <p className="lead">
-                My previous work experience was in Alliance Software Inc. ( Apr 2019 - Aug 2020 )
+                My previous work experience was in Alliance Software Inc. 
               </p>
-              <img src={allianceLogo} style={{maxWidth:'100%',height:'auto'}} alt="Alliance Logo"/>
+              <p>
+              ( Apr 2019 - Aug 2020 )
+              </p>
+              <img src={allianceLogo} style={{maxWidth:'100%',height:'auto', boxShadow:'0px 5px 5px 0px rgba(0,0,0,0.3)'}} alt="Alliance Logo"/>
               <p className="mt-2">
                 Alliance Software, Inc. is a Global IT Services and Solutions Company.
               </p>
@@ -78,9 +84,16 @@ const App = () =>{
           </MDBJumbotron>
 
           </MDBCol>
+          <MDBCol lg="6" md="6" sm="12" xs="12" className="custom-div">
+          <MDBContainer  className="mt-5" style={{padding:'4rem 2rem'}}>
+              <h2 className="h1 display-3 text-center"> 
+                <strong> About Me </strong> 
+              </h2>
+          </MDBContainer>
+          </MDBCol>
         </MDBRow>
         <MDBRow>
-        <MDBCol lg="12" style={{backgroundColor:'#393e46'}}>
+        <MDBCol lg="12" style={{backgroundColor:'#393e46',padding:'0'}}>
           <hr style={{width:'100%'}}/>
         </MDBCol>
         <MDBCol lg="12" className="custom-col-carousel"style={{flexGrow:'1',padding:'50px',backgroundColor:'#393e46'}}>

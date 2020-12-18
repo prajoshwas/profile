@@ -6,6 +6,12 @@
 .navbar, footer{
     background-color: $color-base;
 }
+
+.custom-div{
+    background: $secondary-color;
+    padding:0 !important;
+    border-left:1px solid rgba(255,255,255,0.5);
+}
 h2{
     color:#FFF;
 }
@@ -90,11 +96,18 @@ p{
     color:#0E76A8;
     cursor:pointer;
 }
-
+.custom-fab-github:hover{
+    color:#ceae22;
+    cursor:pointer;
+}
+.custom-outsystems:hover{
+    cursor:pointer;
+}
 .custom-div-jb{
     padding:1rem !important;
-    border: 1px solid rgba(238,238,238,0.5);
+    border: 1px solid rgba(238,238,238,0.2);
     border-radius: 1.5rem;
+    background-color: $color-base;
 }
 //carousel
 .carousel{
@@ -103,13 +116,16 @@ p{
 
 }
 //modal css
-.form-control{
-    color:white !important;
-}
+
 .overflow-y-scroll
 {
     overflow-y: hidden !important;
 }
+
+.form-control{
+    color:white !important;
+}
+
 .md-form input:not([type]):focus:not([readonly]), .md-form input[type="text"]:not(.browser-default):focus:not([readonly]), .md-form input[type="password"]:not(.browser-default):focus:not([readonly]), .md-form input[type="email"]:not(.browser-default):focus:not([readonly]), .md-form input[type="url"]:not(.browser-default):focus:not([readonly]), .md-form input[type="time"]:not(.browser-default):focus:not([readonly]), .md-form input[type="date"]:not(.browser-default):focus:not([readonly]), .md-form input[type="datetime"]:not(.browser-default):focus:not([readonly]), .md-form input[type="datetime-local"]:not(.browser-default):focus:not([readonly]), 
 .md-form input[type="tel"]:not(.browser-default):focus:not([readonly]), .md-form input[type="number"]:not(.browser-default):focus:not([readonly]), 
 .md-form input[type="search"]:not(.browser-default):focus:not([readonly]), .md-form input[type="phone"]:not(.browser-default):focus:not([readonly]), 
