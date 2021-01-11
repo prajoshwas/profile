@@ -15,7 +15,7 @@ import allianceLogo from './assets/images/asilogo.png';
 import me from './assets/images/me.jpg';
 
 const App = () =>{
-  
+
   useEffect(() => {
     AOS.init({
     duration : 1000
@@ -28,24 +28,27 @@ const App = () =>{
     win.focus();
   }
   return (
+    
+      <MDBContainer fluid>   
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"/>
 
-
-      <MDBContainer fluid>
       {/* navbar */}
       <Header/>
-
-      {/* body */}
-
+      
+      {/* Introduction */}
       <MDBContainer fluid style={{minHeight:'100vh',overflowX:"hidden"}}>
-        <MDBRow>
-          <MDBCol  className="w3-container mt-5" lg="6" md="6" sm="12" xs="12">
-          <MDBJumbotron>
-            <MDBContainer className="text-center">
+        <MDBContainer fluid className="custom-div-jb-header">
+            <MDBContainer className="text-center" >
             <h2 className="h1 display-3 w3-animate-opacity" >Hello! I am Joshua Mark Sugatan</h2>
             </MDBContainer>
-            <MDBContainer center="true" className="text-center my-5 ">        
-              <img src={me} alt="Graduation Picture" className="custom-img w3-animate-opacity" style={{boxShadow:'0px 10px 10px 0px rgba(0,0,0,0.3)'}}/>
+            <MDBContainer center="true" className="text-center" style={{zIndex:'1029',position:'relative'}}>        
+              <img src={me} alt="Graduation Picture" className="custom-img w3-animate-opacity mt-3" style={{boxShadow:'0px 10px 10px 0px rgba(0,0,0,0.5)'}}/>
             </MDBContainer>
+        </MDBContainer>
+        <MDBRow>
+          <MDBCol  className="w3-container" lg="6" md="6" sm="11" xs="10">
+          <MDBJumbotron>   
+          <h2 className="text-center text-white"> Work Experience</h2>
           <MDBContainer className="pt-3 custom-div-jb text-center w3-animate-bottom" style={{width:'80%',boxShadow:'0px 5px 5px 0px rgba(0,0,0,0.3)'}}>
               <p className="lead text-center">
                 I am a software developer, currently working at CloudNinja PH
@@ -81,22 +84,45 @@ const App = () =>{
             </MDBContainer>
 
           </MDBContainer>
+          
           </MDBJumbotron>
-
           </MDBCol>
-          <MDBCol lg="6" md="6" sm="12" xs="12" className="custom-div">
-          <MDBContainer  className="mt-5" style={{padding:'4rem 2rem'}}>
-              <h2 className="h1 display-3 text-center"> 
-                <strong> About Me </strong> 
-              </h2>
+
+          <MDBCol lg="6" md="6" sm="11" xs="10" className="custom-div p-5">
+                  <h2 className="text-center my-4">About me</h2>
+          <MDBContainer className="text-center custom-div-jb text-center w3-animate-bottom" style={{width:'80%'}}>
+              <p>I am Software Developer knowledgeable on the following technology</p>
+              <MDBRow lg="1" className="text-center">
+                <MDBCol lg='12'>
+                    <li className="text-white">Java SE, J2EE</li>
+                    <li className="text-white">C / C++</li>
+                    <li className="text-white">C# (.NETCore, .NET Framework, Winforms)</li>
+                    <li className="text-white">ASP.NET</li>
+                    <li className="text-white">OutSystems</li>
+                    <li className="text-white">Springboot</li>
+                    <li className="text-white">Spring</li>
+                    <li className="text-white">LINQ</li>
+                    <li className="text-white">SQL(MySQL)</li>
+                    <li className="text-white">Firebase / Firestore</li>
+                    <li className="text-white">Native Mobile App Android Development</li>
+                    <li className="text-white">Git (CLI) : Git GUI(SourceTree, MS Team Foundation Server, Github)</li>
+                    <li className="text-white">Web Development {'&'} Design (HTML, Bootstrap, CSS, Ajax, Jquery)</li>
+                    <li className="text-white">Front-side Javascript (ReactJS, Native)</li>
+                    <li className="text-white">Server-side Javascript (NodeJS)</li>
+                    <li className="text-white">Development of RESTful API</li>
+                </MDBCol>
+              </MDBRow>
           </MDBContainer>
           </MDBCol>
+
+
         </MDBRow>
+
         <MDBRow>
-        <MDBCol lg="12" style={{backgroundColor:'#393e46',padding:'0'}}>
+        <MDBCol lg="12" style={{backgroundColor:'#292a2c',padding:'0'}}>
           <hr style={{width:'100%'}}/>
         </MDBCol>
-        <MDBCol lg="12" className="custom-col-carousel"style={{flexGrow:'1',padding:'50px',backgroundColor:'#393e46'}}>
+        <MDBCol lg="12" className="custom-col-carousel"style={{flexGrow:'1',padding:'50px',backgroundColor:'#292a2c'}}>
               <MDBCarousel
                 activeItem={1}
                 length={3}

@@ -2,6 +2,9 @@
     .custom-div-jb{
         width:100% !important;
     }
+    .custom-div-jb-header{
+        padding-top:70px !important
+    }
     .carousel{
        width:90% !important;
     }
@@ -12,6 +15,9 @@
 @include media-breakpoint-down(sm) { 
     .custom-div-jb{
         width:100% !important;
+    }
+    .custom-div-jb-header{
+        padding-top:70px !important
     }
     .carousel{
         width:90% !important;
