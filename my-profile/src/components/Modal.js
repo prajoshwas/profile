@@ -13,7 +13,7 @@ const Modal = forwardRef(
         ref
     )  => {
         const [dialog, isOpen] = useState(false);
-        const [email, setEmail] = useState("");
+        const [name, setName] = useState("");
         const [msg , setText] = useState("");
         const [loading, setDisabled] = useState(false);
 
@@ -28,10 +28,10 @@ const Modal = forwardRef(
         const submit = () =>{
           setDisabled(true);
           axios.post('https://backend-profilenode.herokuapp.com/send-email',{
-              from:email,
+              from:name,
               text:msg,
           }).then(resp => {
-              setEmail('')
+              setName('')
               setText('')
               setDisabled(false)
               isOpen(false) 
@@ -53,9 +53,9 @@ const Modal = forwardRef(
                 <MDBModalHeader color="white" className="text-center" titleClass="w-100 font-weight-bold custom-modal-header" toggle={()=> isOpen(false)}>Email Me !</MDBModalHeader>
                 <MDBModalBody>
                   <form className="mx-3 grey-text">
-                    <MDBInput label="Email" icon="at" group type="email" validate error="wrong" success="right" 
-                     value = {email || ""}
-                     onChange = {(e) => setEmail(e.target.value)} />
+                    <MDBInput label="Name" icon="user" group type="text" validate error="wrong" success="right" 
+                     value = {name || ""}
+                     onChange = {(e) => setName(e.target.value)} />
                     <MDBInput label="Message for Inquiry and/or Opportunity" icon="comment-alt" group type="textarea" rows="5" style={{minHeight:'50px'}}
                     value = {msg || ""}
                     onChange = {(e) => setText(e.target.value)} />
