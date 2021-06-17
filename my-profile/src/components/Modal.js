@@ -50,7 +50,7 @@ const Modal = forwardRef(
         
         return (
               <MDBModal isOpen={dialog} toggle={openDialog} size={size} centered >
-                <MDBModalHeader color="white" className="text-center" titleClass="w-100 font-weight-bold custom-modal-header" toggle={()=> isOpen(false)}>Email Me !</MDBModalHeader>
+                <MDBModalHeader color="white" className="text-center" titleClass="w-100 font-weight-bold custom-modal-header" toggle={()=> isOpen(false)}>Contact Me !</MDBModalHeader>
                 <MDBModalBody>
                   <form className="mx-3 grey-text">
                     <MDBInput label="Name" icon="user" group type="text" validate error="wrong" success="right" 

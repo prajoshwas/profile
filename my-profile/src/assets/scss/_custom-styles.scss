@@ -1,19 +1,30 @@
 // Your custom styles
+.work-bg {
+    background-color: $workExperience;
+}
+.languages-bg {
+    background-color: $languagesKnown;
+}
 .container-fluid{
     padding:0!important;
 }
-
-.navbar, footer{
-    background-color: $color-base;
+.navbar {
+    box-shadow:none !important;
 }
-
+.custom-div-jb-header{
+    padding-top:100px !important
+}
+.custom-div-jb{
+    border: 1px solid rgba(238,238,238,0.2);
+    border-radius: 1.5rem;
+    background-color: $secondary-color;
+}
 .custom-div{
     background: $secondary-color;
     padding:0 !important;
-    border-left:1px solid rgba(255,255,255,0.5);
 }
 h2{
-    color:#FFF;
+    color:$white;
 }
 input, textarea{
     font-size: large !important;
@@ -25,8 +36,8 @@ input, textarea{
 }
 .custom-btn:hover{
     color:#FFF !important;
-    background-color: $color-base !important;
 }
+
 .custom-btn{
     background-color:$component-color !important;
 }
@@ -56,8 +67,9 @@ input, textarea{
 hr{
     background-color:rgba(255,255,255,0.50) !important;
 }
+
 p{
-    color:#EEEEEE;
+    color:$white;
 }
 
 .custom-react-icon{
@@ -103,21 +115,32 @@ p{
 .custom-outsystems:hover{
     cursor:pointer;
 }
-.custom-div-jb{
-    padding:1rem !important;
-    border: 1px solid rgba(238,238,238,0.2);
-    border-radius: 1.5rem;
-    background-color: $color-base;
-}
-.custom-div-jb-header{
-    background-color: $color-base;
-    padding-top:100px !important
-}
-//carousel
+
 .carousel{
     margin-left:auto;
     margin-right:auto;
+}
 
+.custom-carousel {
+    max-width: 250px !important;
+}
+
+.carousel .carousel-control-next-icon{
+    background-color: $black !important;
+    border-radius: 25px;
+}
+.carousel .carousel-control-prev-icon{
+    background-color: $black !important;
+    border-radius: 25px;
+}
+
+.carousel-indicators li {
+    background-color: $carousel-indicator-color !important;
+}
+
+.ml-help-style {
+    width: 500px !important;
+    height: 400px !important;
 }
 //modal css
 
@@ -158,12 +181,11 @@ p{
 .custom-modal-header{
     color:white;
     text-align: center;
-    
 }
 
 .modal-dialog .modal-content{
-    background-color:$secondary-color;
-
+    background-color:$modal-color;
+    border-radius: 15px;
 }
 .modal-header .close
 {
@@ -185,10 +207,6 @@ p{
 .w3-animate-bottom {
     position: relative;
     animation: animatebottom 1.0s;
-}
-
-.w3-container, .w3-panel{
-    padding:0 !important;
 }
 
 @import "src/assets/scss/media-queries.scss";

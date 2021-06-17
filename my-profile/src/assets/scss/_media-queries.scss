@@ -5,11 +5,18 @@
     .custom-div-jb-header{
         padding-top:70px !important
     }
-    .carousel{
-       width:90% !important;
-    }
     .custom-col-carousel{
         padding:10px !important;
+    }
+    .custom-div-jb{
+        width: 100% !important;
+    }
+    .custom-carousel {
+        max-width: 50% !important;
+    }
+    .helpsystem-description {
+        margin-bottom: 10px;
+        text-align: center !important;
     }
 }
 @include media-breakpoint-down(sm) { 
@@ -19,26 +26,57 @@
     .custom-div-jb-header{
         padding-top:70px !important
     }
-    .carousel{
-        width:90% !important;
-     }
-     .custom-col-carousel{
+    .custom-col-carousel{
          padding:10px !important;
-     }
+    }
+    .custom-div-jb{
+        width: 80% !important;
+    }
+    .custom-carousel {
+        max-width: 50% !important;
+    }
+    .ml-help-style {
+        width: 500px !important;
+        height: 400px !important;
+    }
+    .helpsystem-description {
+        margin-bottom: 10px;
+        text-align: center !important;
+    }
 }
 @include media-breakpoint-down(md) { 
-    .carousel{
-        width:90% !important;
+
+    .project-description{
+        margin-top: 10px;
+        text-align: center !important;
+    }
+    .custom-div-jb{
+        width: 80% !important;
+    }
+    .custom-carousel {
+        max-width: 30% !important;
+    }
+    .ml-help-style {
+        width: 350px !important;
+        height: 305px !important;
+    }
+    .helpsystem-description {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center !important;
     }
  }
 @include media-breakpoint-down(lg) { 
-    .carousel{
+    .custom-carousel{
         width:50% !important;
+    }
+    .helpsystem-description {
+        text-align: right;
     }
  }
 
  @include media-breakpoint-down(xl) { 
-    .carousel{
-        width:90% !important;
+    .helpsystem-description {
+        text-align: right;
     }
  }

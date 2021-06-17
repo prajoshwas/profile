@@ -3,7 +3,7 @@ import {
 MDBIcon, MDBContainer, MDBFooter, MDBCol, MDBRow
 } from "mdbreact";
 import mdbreact from '../assets/images/mdb-react.png';
-import outsystemslogo from '../assets/images/outsystems.png';
+//import outsystemslogo from '../assets/images/outsystems.png';
 
 const Footer = () => {
     const icons = [
@@ -40,31 +40,28 @@ const Footer = () => {
     ]
      
     const openInTab = (url,e)=>{
-    e.preventDefault();
-    var win = window.open(url);
-    win.focus();
+      e.preventDefault();
+      var win = window.open(url);
+      win.focus();
     }
 
     return(
-    <MDBFooter style={{bottom:'0', marginTop:'auto'}}>
-            <MDBContainer className="py-3 text-center text-md-left" data-aos="fade-left" data-aos-easing="ease-in-sine">
+    <MDBFooter  style={{bottom:'0', marginTop:'auto'}}>
+            <MDBContainer className="py-3 text-center text-md-left" data-aos="fade-down" data-aos-easing="ease-in-sine">
             <MDBRow>
-              <MDBCol lg="6" md="6" className="text-center">
+              <MDBCol lg="6" md="6" className="text-center align-self-center">
                 <h5 className="d-block" style={{fontSize:"20px"}}>This page was created using 
                   <span className="d-block">
                   <MDBIcon className="d-inline-block my-3 custom-react-icon" size="lg" fab icon="react">                
                   </MDBIcon>
                   <span style={{fontSize:'24px'}}> ReactJS </span>
-                  </span>
                   and
-                  <span className="d-block my-3"> 
-                  <img className="d-inline-block" src={mdbreact} style={{width:'70px',marginTop:'-5px'}}/>
-                  <span className="d-inline-block"style={{fontSize:'24px'}}> MDBootstrap</span>
+                  <img className="d-inline-block" alt={'MDBootstrap'} src={mdbreact} style={{width:'70px',marginTop:'-5px'}}/>
                   </span>
                 </h5>
               </MDBCol>
               <MDBCol lg="6" md="6" className="text-center mt-3">
-                <h5 className="title font-weight-bold"> You Can Also Contact Me At</h5>
+                <h5 className="title font-weight-bold"> You can also reach me at</h5>
                 {
                     icons.map((item,idx) =>
                     (
@@ -74,12 +71,11 @@ const Footer = () => {
                         icon={item.icon} 
                         alt={item.alt} 
                         title={item.title}
-                        size="3x"
+                        size="2x"
                         key={idx}>
                         </MDBIcon>
                     ))
                 }
-                <img src={outsystemslogo} className="custom-outsystems" title="https://www.outsystems.com/profile/283424/" style={{width:'100px'}} onClick={e => openInTab("https://www.outsystems.com/profile/283424/",e)}></img>
               </MDBCol>
             </MDBRow>
             </MDBContainer>
