@@ -139,20 +139,20 @@ p{
 }
 
 .ml-help-style {
-    width: 500px !important;
+    width: 50% !important;
     height: 400px !important;
 }
 //modal css
 
-.overflow-y-scroll
-{
-    overflow-y: hidden !important;
-}
-
 .form-control{
     color:white !important;
 }
-
+.overflow-y-scroll {
+    overflow-y: hidden !important;
+}
+.modal-open {
+    overflow: hidden !important;
+}
 .md-form input:not([type]):focus:not([readonly]), .md-form input[type="text"]:not(.browser-default):focus:not([readonly]), .md-form input[type="password"]:not(.browser-default):focus:not([readonly]), .md-form input[type="email"]:not(.browser-default):focus:not([readonly]), .md-form input[type="url"]:not(.browser-default):focus:not([readonly]), .md-form input[type="time"]:not(.browser-default):focus:not([readonly]), .md-form input[type="date"]:not(.browser-default):focus:not([readonly]), .md-form input[type="datetime"]:not(.browser-default):focus:not([readonly]), .md-form input[type="datetime-local"]:not(.browser-default):focus:not([readonly]), 
 .md-form input[type="tel"]:not(.browser-default):focus:not([readonly]), .md-form input[type="number"]:not(.browser-default):focus:not([readonly]), 
 .md-form input[type="search"]:not(.browser-default):focus:not([readonly]), .md-form input[type="phone"]:not(.browser-default):focus:not([readonly]), 

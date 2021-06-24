@@ -46,8 +46,8 @@ const Footer = () => {
     }
 
     return(
-    <MDBFooter  style={{bottom:'0', marginTop:'auto'}}>
-            <MDBContainer className="py-3 text-center text-md-left" data-aos="fade-down" data-aos-easing="ease-in-sine">
+    <MDBFooter color="young-passion-gradient" style={{bottom:'0', marginTop:'auto',}}>
+            <MDBContainer fluid style={{backgroundColor: 'rgba(0,0,0,0.2)'}} className="py-3 text-center text-md-left" >
             <MDBRow>
               <MDBCol lg="6" md="6" className="text-center align-self-center">
                 <h5 className="d-block" style={{fontSize:"20px"}}>This page was created using 

@@ -42,7 +42,7 @@ const Projects = props => {
         }
     ]
     return(
-        <MDBContainer fluid className="mt-5">
+        <MDBContainer fluid className="my-5">
             <h2 className="text-center" data-aos="fade-up" data-aos-easing="ease-in-sine">Project Experience</h2>
             <MDBContainer fluid>
                 <p className="lead text-center" data-aos="fade-up" data-aos-easing="ease-in-sine">

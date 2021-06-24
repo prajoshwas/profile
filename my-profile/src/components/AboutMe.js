@@ -6,7 +6,7 @@ import {
 const AboutMe = (props) => {
 
     return(
-        <MDBCol lg="6" md="6" sm="12" xs="10" className="custom-div p-5">
+        <MDBCol lg="6" md="6" sm="12" xs="10" className="custom-div">
         <MDBJumbotron>
             <h2 className="text-center my-4" data-aos="fade-up" data-aos-easing="ease-in-sine">About me</h2>
             <MDBContainer className="text-center custom-div-jb text-center " data-aos="fade-up" data-aos-easing="ease-in-sine" style={{width:'80%', boxShadow: 'rgb(0 0 0 / 30%) 0px 5px 5px 0px'}}>
